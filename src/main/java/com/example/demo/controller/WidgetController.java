@@ -1,11 +1,14 @@
 package com.example.demo.controller;
 
+import com.example.demo.service.OrderService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +28,12 @@ import java.util.Base64;
 @Controller
 public class WidgetController {
 
+    @Value("${api.key}")
+    private String API_KEY;
+
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
+    @Autowired
+    private OrderService orderService;
 
     @RequestMapping(value = "/confirm")
     public ResponseEntity<JSONObject> confirmPayment(@RequestBody String jsonBody) throws Exception {
@@ -43,6 +51,8 @@ public class WidgetController {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+        //체크
+        orderService.checkAmount(orderId, amount);
         ;
         JSONObject obj = new JSONObject();
         obj.put("orderId", orderId);
@@ -76,6 +86,10 @@ public class WidgetController {
 
         int code = connection.getResponseCode();
         boolean isSuccess = code == 200 ? true : false;
+
+        //결제 승인이 완료
+        if(isSuccess) orderService.setPaymentComplete(orderId);
+        else throw new RuntimeException("결제 승인 실패했습니다");
 
         InputStream responseStream = isSuccess ? connection.getInputStream() : connection.getErrorStream();
 

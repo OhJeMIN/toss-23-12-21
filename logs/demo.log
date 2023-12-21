@@ -15,3 +15,20 @@
 [20231221 09:35:08:715][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [20231221 09:35:08:715][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [20231221 09:35:08:716][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[20231221 09:51:21:551][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 21.0.1 with PID 2740 (C:\Users\Oh\IdeaProjects\html-java\target\classes started by Oh in C:\Users\Oh\IdeaProjects\html-java)
+[20231221 09:51:21:553][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20231221 09:51:21:594][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20231221 09:51:21:594][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20231221 09:51:22:398][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 4242 (http)
+[20231221 09:51:22:405][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-4242"]
+[20231221 09:51:22:407][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20231221 09:51:22:407][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[20231221 09:51:22:445][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20231221 09:51:22:446][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 851 ms
+[20231221 09:51:22:757][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20231221 09:51:22:771][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-4242"]
+[20231221 09:51:22:789][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 4242 (http) with context path ''
+[20231221 09:51:22:795][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 1.677 seconds (process running for 2.312)
+[20231221 09:51:24:647][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20231221 09:51:24:648][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20231221 09:51:24:648][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 0 ms
