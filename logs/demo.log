@@ -1,0 +1,17 @@
+[20231221 09:35:04:041][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 21.0.1 with PID 12428 (C:\Users\Oh\IdeaProjects\html-java\target\classes started by Oh in C:\Users\Oh\IdeaProjects\html-java)
+[20231221 09:35:04:042][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20231221 09:35:04:088][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20231221 09:35:04:088][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20231221 09:35:05:061][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 4242 (http)
+[20231221 09:35:05:071][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-4242"]
+[20231221 09:35:05:073][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20231221 09:35:05:074][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.16]
+[20231221 09:35:05:123][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20231221 09:35:05:123][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1034 ms
+[20231221 09:35:05:489][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20231221 09:35:05:509][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-4242"]
+[20231221 09:35:05:533][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 4242 (http) with context path ''
+[20231221 09:35:05:540][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 2.006 seconds (process running for 2.85)
+[20231221 09:35:08:715][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20231221 09:35:08:715][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20231221 09:35:08:716][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 0 ms
